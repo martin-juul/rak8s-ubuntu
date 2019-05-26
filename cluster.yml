@@ -1,0 +1,15 @@
+- hosts: all
+  roles:
+    - common
+    - docker
+    - kubeadm
+
+- hosts: master
+  roles:
+    - master
+    - metallb
+#    - dashboard
+
+- hosts: all:!master
+  roles:
+    - workers

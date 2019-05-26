@@ -1,0 +1,89 @@
+---
+#- name: "Delete flannel"
+#  shell: kubectl delete -f https://rawgit.com/coreos/flannel/{{ flannel_version }}/Documentation/kube-flannel.yml
+#  args:
+#    warn: no
+
+- name: "Reset Kubernetes"
+  shell: echo $(kubeadm reset && echo 'true')
+  become: True
+
+- name: "Remove docker images"
+  shell: echo $(docker rmi --force $(docker images --all -q) && echo 'true')
+  become: true
+
+- name: "apt-get purge packages"
+  apt:
+    name: [
+      kubelet,
+      kubeadm,
+      kubectl,
+      kubernetes-cni,
+      docker-ce,
+      docker-ce-cli,
+      containerd.io
+    ]
+    autoclean: yes
+    autoremove: yes
+    force: yes
+    purge: yes
+    state: absent
+  become: True
+
+- name: "Remove /var/lib/kubelet"
+  shell: rm -rf /var/lib/kubelet
+  become: True
+
+- name: "Remove /etc/docker"
+  shell: rm -rf /etc/docker
+  become: True
+
+- name: "Remove /etc/kubernetes"
+  shell: rm -rf /etc/kubernetes
+  become: True
+
+- name: "Remove /root/.kube"
+  shell: rm -rf /root/.kube
+  become: True
+
+- name: "Remove flannel"
+  shell: rm -rf /var/lib/cni/ && rm -rf /run/flannel && rm -rf /etc/cni
+  become: True
+
+- name: "Remove pod logging"
+  shell: rm -rf /var/log/pods
+  become: True
+
+- name: "Remove container logging"
+  shell: rm -rf /var/log/containers
+  become: True
+
+- name: Remove linux interfaces
+  shell: ip link del "{{ item }}"
+  changed_when: False
+  failed_when: False
+  with_items:
+    - flannel.1
+    - docker0
+
+- shell: systemctl reset-failed
+  changed_when: False
+
+- shell: systemctl daemon-reload
+  changed_when: False
+
+- shell: find /var/lib/kubelet/pods -type d -exec umount {} \; 2>/dev/null || true
+  changed_when: False
+
+- name: restart host
+  shell: 'sleep 5 && shutdown -r now "[Ansible]: Reboot"'
+  become: yes
+  async: 1
+  poll: 0
+
+- name: 'Wait for host to become available again'
+  wait_for_connection:
+    delay: 30
+    connect_timeout: 10
+    sleep: 10
+    timeout: 300

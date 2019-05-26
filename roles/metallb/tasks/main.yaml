@@ -1,0 +1,22 @@
+---
+- name: Install Metal LB
+  shell: kubectl apply -f https://raw.githubusercontent.com/google/metallb/{{ metallb_version }}/manifests/metallb.yaml
+
+- name: Copy Metal LB ConfigMap to master
+  copy:
+    src: metallb-configmap.yaml
+    dest: /root/metallb-configmap.yaml
+    owner: root
+    group: docker
+    mode: 0755
+
+- name: Apply Metal LB ConfigMap
+  shell: kubectl apply -f /root/metallb-configmap.yaml
+
+- name: Poke kubelet
+  systemd:
+    name: kubelet
+    state: restarted
+    daemon_reload: yes
+    enabled: yes
+  register: kubelet_poke

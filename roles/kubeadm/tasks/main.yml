@@ -1,0 +1,71 @@
+---
+# https://gist.github.com/alexellis/fdbc90de7691a1b9edb545c17da2d975
+- name: Disable Swap
+  shell: dphys-swapfile swapoff && dphys-swapfile uninstall && update-rc.d dphys-swapfile remove
+  ignore_errors: True
+
+- name: Ensure home is owned by '{{ user }}'
+  command: |
+    chown -R ubuntu /home/{{ user }}
+
+- name: Check if systemd StandardError=null
+  shell: cat /etc/systemd/system.conf | grep 'StandardError=null'
+  ignore_errors: yes
+  register: systemd_standarderror_check
+
+- name: Set systemd StandardError=null
+  lineinfile:
+    path: /etc/systemd/system.conf
+    line: StandardError=null
+  register: reload_daemon
+  when: systemd_standarderror_check.stdout == ""
+
+- name: Reload systemd
+  systemd:
+    daemon_reload: yes
+  when: reload_daemon|bool
+
+- name: Pass bridged IPv4 traffic to iptables' chains
+  sysctl:
+    name: net.bridge.bridge-nf-call-iptables
+    value: 1
+    state: present
+
+- name: Add Google Cloud Repo Key
+  apt_key: url=https://packages.cloud.google.com/apt/doc/apt-key.gpg
+
+- name: Add Kubernetes to Available apt Sources
+  template:
+    src: kubernetes.list
+    dest: /etc/apt/sources.list.d/kubernetes.list
+    owner: root
+    group: root
+    mode: 0644
+
+- name: Install kubelet, kubeadm and kubectl {{ kubernetes_package_version }}
+  apt:
+    autoclean: yes
+    autoremove: yes
+    update_cache: yes
+    state: present
+    force: yes
+    name: [
+      "kubelet={{ kubernetes_package_version }}",
+      "kubeadm={{ kubernetes_package_version }}",
+      "kubectl={{ kubernetes_package_version }}"
+    ]
+
+- name: set kube cgroup driver in 10-kubeadm.conf
+  command: |
+    sed -i "s/cgroup-driver=systemd/cgroup-driver=cgroupfs/g" /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+
+- name: nuke KUBELET_NETWORK_ARGS from 10-kubeadm.conf
+  command: |
+    sed -i '/KUBELET_NETWORK_ARGS=/d' /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+
+- name: Reload systemd
+  systemd:
+    name: kubelet
+    state: restarted
+    daemon_reload: yes
+  when: reload_daemon

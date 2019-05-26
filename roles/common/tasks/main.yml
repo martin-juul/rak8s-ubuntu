@@ -1,0 +1,90 @@
+---
+- name: Ensure hostname set
+  hostname:
+    name: "{{ inventory_hostname }}"
+  when: not inventory_hostname is match('(\d{1,3}\.){3}\d{1,3}')
+  register: hostname
+  tags: hostname
+
+- name: Ensure node hostnames exists in /etc/hosts
+  lineinfile:
+    dest: /etc/hosts
+    regexp: "^{{ ansible_default_ipv4.address }}.+$"
+    line: "{{ ansible_default_ipv4.address }} {{ ansible_fqdn }} {{ ansible_hostname }}"
+  register: hostname
+  tags: hostname
+
+- name: set timezone to UTC
+  timezone:
+    name: UTC
+  register: timezone
+
+- name: '[config.txt]: check if gpu_mem is set'
+  shell: cat /boot/firmware/config.txt | grep gpu_mem
+  ignore_errors: yes
+  register: gpu_mem_check
+
+- name: '[config.txt]: set gpu_mem to 16 megabytes'
+  lineinfile:
+    path: /boot/firmware/config.txt
+    line: gpu_mem=16
+  register: gpu_mem
+  when: gpu_mem_check.stdout == ""
+
+- name: '[config.txt]: check if sd_overclock is set'
+  shell: cat /boot/firmware/config.txt | grep 'sd_overclock'
+  ignore_errors: yes
+  register: sd_overclock_check
+
+- name: '[config.txt]: set sd clock to 100'
+  lineinfile:
+    path: /boot/firmware/config.txt
+    line: dtparam=sd_overclock=100
+  register: sd_overclock
+  when: sd_overclock_check.stdout == ""
+
+- name: '[cmdline.txt]: overwrite with cgroup options'
+  copy:
+    src: cmdline.txt
+    dest: /boot/firmware/cmdline.txt
+    owner: root
+    group: root
+    mode: 0755
+  register: cmdline
+  tags:
+    - boot
+
+- name: aptitude dependency
+  raw: apt-get install python-minimal python-apt aptitude -y
+  become: true
+  become_user: root
+  become_method: sudo
+
+- name: apt-get upgrade
+  apt:
+    autoclean: yes
+    autoremove: yes
+    install_recommends: no
+    update_cache: yes
+    upgrade: full
+
+- name: uninstall unattended-upgrades
+  apt:
+    pkg: unattended-upgrades
+    state: absent
+    autoclean: yes
+    autoremove: yes
+    purge: yes
+
+- name: restart host
+  shell: 'sleep 5 && shutdown -r now "[Ansible]: Reboot"'
+  become: yes
+  async: 1
+  poll: 0
+
+- name: 'Wait for host to become available again'
+  wait_for_connection:
+    delay: 90
+    connect_timeout: 10
+    sleep: 10
+    timeout: 300

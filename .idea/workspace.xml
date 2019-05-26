@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="714090bd-e26e-4e5e-adea-03ce390b77fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/martin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/rak8s.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/group_vars/master.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reboot.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/files/daemon.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/docker/tasks/main.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/metallb/files/Metallb-ConfigMap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roles/metallb/tasks/main.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shutdown.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cleanup.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/code_of_conduct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/issue_template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/pull_request_template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/group_vars/all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/all.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory" beforeDir="false" afterPath="$PROJECT_DIR$/inventory" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/cleanup/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/cleanup/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/common/files/cmdline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/roles/common/files/cmdline.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/common/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/common/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/dashboard/files/dashboard-admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/dashboard/files/dashboard-admin.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/kubeadm/files/get-docker.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/kubeadm/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/kubeadm/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/kubeadm/templates/kubernetes.list" beforeDir="false" afterPath="$PROJECT_DIR$/roles/kubeadm/templates/kubernetes.list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/master/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/master/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/roles/workers/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/workers/tasks/main.yml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="23041" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cluster.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/roles/metallb/tasks/main.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/roles/workers/tasks/main.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cmd</find>
+      <find>rootw</find>
+      <find>bio</find>
+      <find>config.</find>
+      <find>cmdli</find>
+      <find>cmdl</find>
+      <find>cmdline</find>
+      <find>apt-tr</find>
+      <find>sed</find>
+      <find>w</find>
+      <find>amd64</find>
+      <find>bool</find>
+      <find>kubeadm_init</find>
+      <find>flann</find>
+      <find>fla</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>arm64</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/inventory" />
+        <option value="$PROJECT_DIR$/roles/kubeadm/files/get-docker.sh" />
+        <option value="$PROJECT_DIR$/roles/kubeadm/templates/kubernetes.list" />
+        <option value="$PROJECT_DIR$/Pipfile" />
+        <option value="$PROJECT_DIR$/roles/common/files/daemon.json" />
+        <option value="$PROJECT_DIR$/handlers/debian/power.yml" />
+        <option value="$PROJECT_DIR$/handlers/rpi/performance.yml" />
+        <option value="$PROJECT_DIR$/handlers/power/main.yml" />
+        <option value="$PROJECT_DIR$/group_vars/all.yml" />
+        <option value="$PROJECT_DIR$/roles/docker/files/10-kubeadm.conf" />
+        <option value="$PROJECT_DIR$/roles/kubeadm/files/10-kubeadm.conf" />
+        <option value="$PROJECT_DIR$/roles/common/files/cmdline.txt" />
+        <option value="$PROJECT_DIR$/roles/master/files/kube-flannel.yml" />
+        <option value="$PROJECT_DIR$/roles/common/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/ansible.cfg" />
+        <option value="$PROJECT_DIR$/roles/dashboard/files/dashboard-admin.yaml" />
+        <option value="$PROJECT_DIR$/roles/docker/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/roles/docker/files/daemon.json" />
+        <option value="$PROJECT_DIR$/roles/kubeadm/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/roles/cleanup/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/reboot.yaml" />
+        <option value="$PROJECT_DIR$/roles/master/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/roles/metallb/files/Metallb-ConfigMap.yaml" />
+        <option value="$PROJECT_DIR$/group_vars/master.yaml" />
+        <option value="$PROJECT_DIR$/cluster.yml" />
+        <option value="$PROJECT_DIR$/cleanup.yml" />
+        <option value="$PROJECT_DIR$/roles/metallb/tasks/main.yaml" />
+        <option value="$PROJECT_DIR$/roles/workers/tasks/main.yml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1177" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="NBKnowledgePane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name=".cp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name=".log" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name="group_vars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="metallb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="metallb" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="workers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rak8s" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rak8s" type="462c0819:PsiDirectoryNode" />
+              <item name="roles" type="462c0819:PsiDirectoryNode" />
+              <item name="workers" type="462c0819:PsiDirectoryNode" />
+              <item name="tasks" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/roles/kubeadm/files" />
+      <recent name="$PROJECT_DIR$/roles/docker/files" />
+      <recent name="$PROJECT_DIR$/power" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="714090bd-e26e-4e5e-adea-03ce390b77fd" name="Default Changelist" comment="" />
+      <created>1558804762885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558804762885</updated>
+      <workItem from="1558804766489" duration="5071000" />
+      <workItem from="1558848075892" duration="5102000" />
+      <workItem from="1558854794465" duration="11624000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21797000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17944622" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Quokka" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="DB Execution Console" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32961932" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Google Cloud Storage" order="3" show_stripe_button="false" />
+      <window_info anchor="right" id="make" order="4" />
+      <window_info anchor="right" id="Json Parser" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/roles/kubeadm/files/get-docker.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="445" column="37" lean-forward="true" selection-start-line="445" selection-start-column="37" selection-end-line="445" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.cache/pi-3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="78" column="70" lean-forward="true" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/handlers/rpi/performance.yml" />
+    <entry file="file://$PROJECT_DIR$/handlers/power/main.yml" />
+    <entry file="file://$PROJECT_DIR$/Pipfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/kubeadm/templates/kubernetes.list">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/kubeadm/files/10-kubeadm.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="58" selection-start-column="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/common/files/cmdline.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="198" selection-start-column="198" selection-end-column="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ansible.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="92" selection-start-line="20" selection-start-column="92" selection-end-line="20" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/dashboard/files/dashboard-admin.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-2458" />
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.cache/pi-1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1077" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.log/ansible.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-121561" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/docker/files/daemon.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/master/files/kube-flannel.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="691">
+          <caret line="447" column="20" selection-start-line="447" selection-start-column="20" selection-end-line="447" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_vars/all.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="30" selection-start-column="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/common/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="994">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upgrade.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="17" lean-forward="true" selection-end-line="56" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/cleanup/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="77" selection-start-line="77" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/kubeadm/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/dashboard/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dashboard.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/master/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reboot.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inventory">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/metallb/files/Metallb-ConfigMap.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/docker/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_vars/master.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanup.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/metallb/tasks/main.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/workers/tasks/main.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

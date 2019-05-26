@@ -1,0 +1,101 @@
+---
+- name: Add Docker GPG key
+  apt_key: url=https://download.docker.com/linux/ubuntu/gpg
+
+- name: Add Docker APT repository
+  apt_repository:
+    repo: deb [arch=arm64] https://download.docker.com/linux/ubuntu {{ansible_distribution_release}} stable
+
+- name: Install docker dependencies
+  apt:
+    autoclean: yes
+    autoremove: yes
+    update_cache: yes
+    state: present
+    force: yes
+    name: [
+      apt-transport-https,
+      ca-certificates,
+      curl,
+      gnupg-agent,
+      software-properties-common,
+      cgroup-tools
+    ]
+
+- name: Determine if docker is installed
+  stat:
+    path: /usr/bin/docker
+  register: docker_there
+  ignore_errors: True
+
+- name: Install docker
+  apt:
+    autoclean: yes
+    autoremove: yes
+    update_cache: yes
+    state: present
+    name: [
+      "docker-ce={{ docker_ce_version }}",
+      "docker-ce-cli={{ docker_ce_version }}",
+      "containerd.io={{ containerd_io_version }}"
+    ]
+  when: docker_there.stat.exists == False
+  register: docker_installed
+
+- name: Lock docker-ce version to {{ docker_ce_version }}
+  dpkg_selections:
+    name: docker-ce
+    selection: hold
+  when: docker_installed.changed
+
+- name: Lock docker-ce-cli version to {{ docker_ce_version }}
+  dpkg_selections:
+    name: docker-ce-cli
+    selection: hold
+  when: docker_installed.changed
+
+- name: Lock containerd.io version to {{ containerd_io_version }}
+  dpkg_selections:
+    name: containerd.io
+    selection: hold
+  when: docker_installed.changed
+
+- name: adding user '{{ user }}' to group docker
+  user:
+    name: '{{ user }}'
+    groups: docker
+    append: yes
+
+- name: Create /etc/docker
+  file:
+    path: /etc/docker
+    state: directory
+    owner: root
+    group: docker
+    mode: 0775
+
+- name: stat /etc/docker/daemon.json
+  stat: path=/etc/docker/daemon.json
+  register: docker_daemon_stat
+
+- name: Move /etc/docker/daemon.json to /etc/docker/daemon.json.old
+  command: mv /etc/docker/daemon.json /etc/docker/daemon.json.old
+  when: docker_daemon_stat.stat.exists
+
+- name: Setting docker daemon.json
+  copy:
+    src: daemon.json
+    dest: /etc/docker/daemon.json
+    owner: root
+    group: docker
+    mode: 0755
+
+- name: Creating docker service dir
+  command: |
+    mkdir -p /etc/systemd/system/docker.service.d
+
+- name: Reloading systemd docker.service
+  systemd:
+    state: restarted
+    daemon_reload: yes
+    name: docker

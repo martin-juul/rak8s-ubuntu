@@ -1,0 +1,42 @@
+token: udy29x.ugyyk3tumg27atmr
+podnet: 10.244.0.0/16
+
+kubernetes_package_version: "1.14.2-00"
+# Available versions:
+# 1.13.1-00
+# 1.10.3-00
+# 1.10.2-00
+# 1.10.1-00
+# 1.10.0-00
+# 1.9.8-00
+# 1.9.7-00
+# 1.9.6-00
+# 1.9.5-00
+
+kubernetes_version: "v1.14.2"
+# Available versions:
+# v1.10.3
+# v1.10.2
+# v1.10.1
+# v1.10.1
+# v1.9.8
+# v1.9.7
+# v1.9.6
+# v1.9.5
+
+docker_ce_version: "5:18.09.6~3-0~ubuntu-bionic"
+# Available versions (https://download.docker.com/linux/ubuntu/dists/bionic/stable/binary-arm64/Packages):
+# 5:18.09.6~3-0~ubuntu-bionic
+# 18.06.3~ce~3-0~ubuntu
+
+containerd_io_version: "1.2.5-1"
+
+flannel_version: "master"
+# v0.10.0
+# v0.9.1
+# v0.9.0
+# v0.8.0
+# v0.7.1
+# v0.7.0
+
+user: "ubuntu"
