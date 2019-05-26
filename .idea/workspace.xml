@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714090bd-e26e-4e5e-adea-03ce390b77fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/martin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rak8s.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/group_vars/master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reboot.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/docker/files/daemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/docker/tasks/main.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/metallb/files/Metallb-ConfigMap.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roles/metallb/tasks/main.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shutdown.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ansible.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/ansible.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cleanup.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cleanup.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/code_of_conduct.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/issue_template.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/pull_request_template.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/group_vars/all.yml" beforeDir="false" afterPath="$PROJECT_DIR$/group_vars/all.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory" beforeDir="false" afterPath="$PROJECT_DIR$/inventory" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/cleanup/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/cleanup/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/common/files/cmdline.txt" beforeDir="false" afterPath="$PROJECT_DIR$/roles/common/files/cmdline.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/common/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/common/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/dashboard/files/dashboard-admin.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/dashboard/files/dashboard-admin.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/kubeadm/files/get-docker.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/kubeadm/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/kubeadm/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/kubeadm/templates/kubernetes.list" beforeDir="false" afterPath="$PROJECT_DIR$/roles/kubeadm/templates/kubernetes.list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/master/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/master/tasks/main.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/roles/workers/tasks/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/roles/workers/tasks/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +17,7 @@
     </execution>
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="23041" />
+    <option name="totalTimeSeconds" value="23130" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -72,17 +33,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/roles/metallb/tasks/main.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="504">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/roles/workers/tasks/main.yml">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -145,6 +106,7 @@
         <option value="$PROJECT_DIR$/cleanup.yml" />
         <option value="$PROJECT_DIR$/roles/metallb/tasks/main.yaml" />
         <option value="$PROJECT_DIR$/roles/workers/tasks/main.yml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -261,12 +223,12 @@
       <updated>1558804762885</updated>
       <workItem from="1558804766489" duration="5071000" />
       <workItem from="1558848075892" duration="5102000" />
-      <workItem from="1558854794465" duration="11624000" />
+      <workItem from="1558854794465" duration="11713000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21797000" />
+    <option name="totallyTimeSpent" value="21886000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
@@ -288,7 +250,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="DB Execution Console" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32961932" />
+      <window_info anchor="bottom" id="Terminal" order="12" visible="true" weight="0.32961932" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -496,17 +458,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/roles/metallb/tasks/main.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/roles/workers/tasks/main.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roles/metallb/tasks/main.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
